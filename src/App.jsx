@@ -1,4 +1,4 @@
-import { Navbar, Welcome, Discount, Products } from "./components";
+import { Navbar, Welcome, Discount, Products, Notes } from "./components";
 import { styles } from "./style";
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
         <div className={styles.paddingX}>
           <Discount />
           <Products />
+          <Notes />
         </div>
       </main>
     </div>
