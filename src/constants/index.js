@@ -46,6 +46,7 @@ const user = {
     name: "Mohammed",
     age: 18,
     job: "Web Developer",
+    image: null,
 }
 
 export { products, discount, user };

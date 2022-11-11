@@ -7,11 +7,7 @@ const Button = (props) => (
   >
     {props.text}
     <div className={`h-[26px] w-[26px] ${props.icon ? "" : "hidden"}`}>
-      <img
-        src={props.icon}
-        alt={props.text}
-        className="flex-1 object-contain w-full h-full"
-      />
+      {props.icon}
     </div>
   </button>
 );

@@ -4,10 +4,19 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --primary: #9C27B0;
+    --primary-light: #E1BEE7;
+}
+
 *, *::after, *::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Roboto Slab', sans-serif !important;
+}
+
+.primary__gradient {
+    background: linear-gradient(80deg, var(--primary), var(--primary-light))
 }

@@ -1,11 +1,17 @@
-import { Welcome, Discount, Products } from "./components";
+import { Navbar, Welcome, Discount, Products } from "./components";
+import { styles } from "./style";
 
 function App() {
   return (
-    <div className="sm:px-10 px-4 w-full h-full relative">
+    <div className="w-full h-full relative overflow-hidden bg-primary-light">
+      <Navbar />
       <Welcome />
-      <Discount />
-      <Products />
+      <main className={`w-full ${styles.sepY} my-12 bg-white`}>
+        <div className={styles.paddingX}>
+          <Discount />
+          <Products />
+        </div>
+      </main>
     </div>
   );
 }

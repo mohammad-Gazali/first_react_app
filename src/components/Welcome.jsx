@@ -1,13 +1,14 @@
-import { user } from "../constants";
+import { styles } from "../style";
+import Search from "./Search";
 
 function Welcome() {
   return (
-    <div className="Welcome">
-      <h1>Hello, Welcome {user.name}</h1>
-      <h3>
-        Your age is {user.age}, and you are working as a {user.job}
-      </h3>
-    </div>
+    <section className={`h-[80vh] w-full relative ${styles.flexCenter} ${styles.paddingX} flex-col bg-secondary ${styles.sepBottom} gap-4`}>
+      <h1 className="text-[40px] text-white text-center">
+        Welcome to our store
+      </h1>
+      <Search  />
+    </section>
   );
 }
 

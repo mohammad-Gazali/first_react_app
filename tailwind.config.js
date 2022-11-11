@@ -29,6 +29,9 @@ module.exports = {
     },
     boxShadow: {
       'button': '0px 0px 2px 3px #90D4CE',
+      'sepB': '0px 3px 15px rgba(0, 0, 0, 0.3)',
+      'sepT': '0px -3px 15px rgba(0, 0, 0, 0.3)',
+      'sepY': '0px 3px 15px rgba(0, 0, 0, 0.3), 0px -3px 15px rgba(0, 0, 0, 0.3)',
     }
   },
   plugins: [],
